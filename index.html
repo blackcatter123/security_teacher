@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>基于AI agent的民航安检教学辅助平台</title>
+    <link rel="icon" type="image/x-icon" href="/assets/icon-CH-kDqdr.png" />
+    <script type="module" crossorigin src="/assets/index-CVsMQfU2.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-B7EPKA8q.css">
+  </head>
+  <body>
+    <div id="container_box">
+      <div id="container"></div>
+    </div>
+    <div id="knowledge_back">
+      <!-- From Uiverse.io by abrahamcalsin -->
+      <div class="dot-spinner">
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+      </div>
+      <div id="knowledge_box">
+        <button class="continue-application">
+          <div>
+            <div class="pencil"></div>
+            <div class="folder">
+              <div class="top">
+                <svg viewBox="0 0 24 27">
+                  <path
+                    d="M1,0 L23,0 C23.5522847,-1.01453063e-16 24,0.44771525 24,1 L24,8.17157288 C24,8.70200585 23.7892863,9.21071368 23.4142136,9.58578644 L20.5857864,12.4142136 C20.2107137,12.7892863 20,13.2979941 20,13.8284271 L20,26 C20,26.5522847 19.5522847,27 19,27 L1,27 C0.44771525,27 6.76353751e-17,26.5522847 0,26 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="paper"></div>
+            </div>
+          </div>
+          手持金属探测仪
+        </button>
+        <hr class="line_default" />
+        <div class="theory">
+          <p class="title_default">探测仪的原理</p>
+          <hr class="line_default" style="margin-top: -1em" />
+          <p class="default">
+            手持金属探测仪主要基于<a
+              href="https://baike.baidu.com/item/%E7%94%B5%E7%A3%81%E5%9C%BA/425162"
+              >电磁场原理</a
+            >,当探测器掠过或接近金属物品时,电磁场参数发生变化,检查电路感知到参数的变化量,并<span
+              >通过电路处理及报警阈值来判断是否有金属存在</span
+            >
+          </p>
+        </div>
+        <div class="using">
+          <p class="title_default">使用操作</p>
+          <hr class="line_default" style="margin-top: -1em" />
+          <p class="default">
+            以下是手持金属探测器的使用操作简介<span>(图中以PD140N为例)</span>
+          </p>
+          <img src="/assets/metalMachine-DxpZ1mZo.png" alt="" class="useImg" />
+        </div>
+        <div class="teachFeedBack_section">
+          <button class="feedback_button">
+            <p class="text">我要反馈</p></button
+          ><button class="feedback_button" onclick="openCoze()">
+            <p class="text">有问题?问AI!</p>
+          </button>
+        </div>
+      </div>
+      <div class="introduction">
+        <div class="helloText">
+          <p style="color: #0050b3">H I</p>
+          <p>
+            我是基于<span
+              style="color: #0050b3; font-weight: bold; font-size: 1.2em"
+              >AI agent</span
+            >的
+          </p>
+          <p>
+            <span style="color: #0050b3; font-weight: bold; font-size: 1.2em"
+              >民航安检教学辅助平台</span
+            >
+          </p>
+          <p>一款</p>
+          <p>
+            最关心你的<span
+              style="color: #0050b3; font-weight: bold; font-size: 1.2em"
+              >学习小助手</span
+            >
+          </p>
+        </div>
+        <button
+          class="start btn"
+          onmouseenter="document.querySelector('.start').innerHTML = '进入图谱模块'"
+          onmouseleave="document.querySelector('.start').innerHTML = '让我们开始吧!'"
+        >
+          让我们开始吧!
+        </button>
+        <button
+          class="ai btn"
+          onclick="openCoze()"
+          onmouseenter="document.querySelector('.ai').innerHTML = '展开AI模块'"
+          onmouseleave="document.querySelector('.ai').innerHTML = '尝试AI!'"
+        >
+          尝试AI!
+        </button>
+      </div>
+    </div>
+    <div id="leftInfo_box">
+      <div id="leftInfo">
+        <p class="content_navigator">内容导航</p>
+        <p class="son"><span class="spot">·</span>&nbsp;&nbsp;探测仪的原理</p>
+        <p class="son"><span class="spot">·</span>&nbsp;&nbsp;使用操作</p>
+      </div>
+    </div>
+    <!-- From Uiverse.io by BishalSaini -->
+    <div class="custom-tooltip-container" onclick="openCoze()">
+      <button class="custom-tooltip-btn">尝试智能安全助手! >></button>
+      <div class="custom-tooltip-content">
+        <span class="custom-tooltip-arrow"></span>
+        <p class="custom-tooltip-text">
+          安全助手可以为你解答<span>任何有关安检专业的问题!</span>它的功能包括但不限于<span>答疑解惑\解析图片\分析视频等</span>,快来试试吧!!
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/1.2.0-beta.6/libs/cn/index.js"></script>
+  <script src="./src/js/createCozeApi.js"></script>
+  <script src="./src/js/main.js"></script>
+  <script src="./src/js/enterTeachPage.js"></script>
+</html>
