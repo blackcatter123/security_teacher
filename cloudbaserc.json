@@ -11,7 +11,8 @@
       "website": {
         "use": "@cloudbase/framework-plugin-website",
         "inputs": {
-          "outputPath": "/dist"
+          "buildCommand": "npm run build",
+          "outputPath": "dist"
         }
       }
     }
