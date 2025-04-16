@@ -1,0 +1,56 @@
+body {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  display: flex;
+  overflow-y: hidden;
+}
+
+#container {
+  width: 400px;
+  height: 2800px;
+  margin-top: 0.5em;
+}
+#container_box {
+  width: 400px;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #dadada;
+}
+
+#knowledge_back {
+  width: 800px;
+  height: 910px;
+  border: 2px solid #0050b3;
+  position: relative;
+  top: 10px;
+  margin-bottom: 20px;
+  border-radius: 1em;
+  box-shadow: 3px 3px 1px #ccc;
+}
+
+#leftInfo_box {
+  width: 450px;
+  height: 500px;
+  border: 1px solid #000;
+  position: relative;
+  top: 10px;
+  border-radius: 0.5em;
+  margin-left: 25px;
+  border: 2px solid #0050b3;
+  box-shadow: 3px 3px 1px #ccc;
+  background-color: #0050b3;
+  display: none;
+}
+.enterIn {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #0050b3;
+  text-decoration: underline;
+  margin-top: -10px;
+  margin-left: 50%;
+}
+.enterIn:hover {
+  cursor: pointer;
+}
