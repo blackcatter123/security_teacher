@@ -11,7 +11,7 @@
       "website": {
         "use": "@cloudbase/framework-plugin-website",
         "inputs": {
-          "outputPath": "dist"
+          "outputPath": "/dist"
         }
       }
     }
